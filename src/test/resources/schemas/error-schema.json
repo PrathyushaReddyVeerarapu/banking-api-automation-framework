@@ -1,0 +1,1 @@
+{"$schema":"http://json-schema.org/draft-07/schema#","additionalProperties":true,"properties":{"code":{"pattern":"^[A-Z_]+$","type":"string"},"message":{"minLength":1,"type":"string"}},"required":["code","message"],"title":"ApiError","type":"object"}
