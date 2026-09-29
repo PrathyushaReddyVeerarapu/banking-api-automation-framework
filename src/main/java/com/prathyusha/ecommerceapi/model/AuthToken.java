@@ -1,4 +1,4 @@
-package com.prathyusha.bankingapi.model;
+package com.prathyusha.ecommerceapi.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -10,13 +10,13 @@ public class AuthToken {
     private String token;
 
     @JsonProperty("expiresInSeconds")
-    private long expiresInSeconds;
+    private Integer expiresInSeconds;
 
     public String getToken() {
         return token;
     }
 
-    public long getExpiresInSeconds() {
+    public Integer getExpiresInSeconds() {
         return expiresInSeconds;
     }
 }

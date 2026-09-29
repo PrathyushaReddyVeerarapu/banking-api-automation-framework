@@ -1,4 +1,4 @@
-package com.prathyusha.bankingapi.model;
+package com.prathyusha.ecommerceapi.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -6,22 +6,25 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import java.math.BigDecimal;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Account {
+public class Product {
 
     @JsonProperty("id")
     private String id;
 
-    @JsonProperty("owner")
-    private String owner;
+    @JsonProperty("name")
+    private String name;
 
-    @JsonProperty("type")
-    private String type;
+    @JsonProperty("category")
+    private String category;
+
+    @JsonProperty("price")
+    private BigDecimal price;
 
     @JsonProperty("currency")
     private String currency;
 
-    @JsonProperty("balance")
-    private BigDecimal balance;
+    @JsonProperty("stock")
+    private Integer stock;
 
     @JsonProperty("status")
     private String status;
@@ -30,20 +33,24 @@ public class Account {
         return id;
     }
 
-    public String getOwner() {
-        return owner;
+    public String getName() {
+        return name;
     }
 
-    public String getType() {
-        return type;
+    public String getCategory() {
+        return category;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
     }
 
     public String getCurrency() {
         return currency;
     }
 
-    public BigDecimal getBalance() {
-        return balance;
+    public Integer getStock() {
+        return stock;
     }
 
     public String getStatus() {

@@ -1,11 +1,11 @@
-package com.prathyusha.bankingapi.config;
+package com.prathyusha.ecommerceapi.config;
 
 /**
  * Central configuration for the framework.
  *
  * <p>Values can be overridden without touching code, e.g.:
  * <pre>
- * mvn test -Dapi.baseUri=https://banking-api.qa.example.com -Dapi.basePath=/api/v1
+ * mvn test -Dapi.baseUri=https://store-api.qa.example.com -Dapi.basePath=/api/v1
  * </pre>
  */
 public final class FrameworkConfig {
@@ -30,7 +30,7 @@ public final class FrameworkConfig {
         return System.getProperty("api.password", "QualityRocks123");
     }
 
-    /** WireMock port used by the self-contained stub banking API. */
+    /** Port used by the self-contained stub store API. */
     public static int mockPort() {
         return Integer.parseInt(System.getProperty("mock.port", "8089"));
     }

@@ -1,4 +1,4 @@
-package com.prathyusha.bankingapi.model;
+package com.prathyusha.ecommerceapi.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;

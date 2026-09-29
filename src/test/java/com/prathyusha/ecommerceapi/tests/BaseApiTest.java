@@ -1,10 +1,10 @@
-package com.prathyusha.bankingapi.tests;
+package com.prathyusha.ecommerceapi.tests;
 
-import com.prathyusha.bankingapi.client.ApiClient;
-import com.prathyusha.bankingapi.config.FrameworkConfig;
-import com.prathyusha.bankingapi.model.AuthToken;
-import com.prathyusha.bankingapi.model.LoginRequest;
-import com.prathyusha.bankingapi.utils.StubBankApi;
+import com.prathyusha.ecommerceapi.client.ApiClient;
+import com.prathyusha.ecommerceapi.config.FrameworkConfig;
+import com.prathyusha.ecommerceapi.model.AuthToken;
+import com.prathyusha.ecommerceapi.model.LoginRequest;
+import com.prathyusha.ecommerceapi.utils.StubStoreApi;
 import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
@@ -17,27 +17,27 @@ import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.isEmptyOrNullString;
 
 /**
- * Boots the stub banking API once per suite and logs in once per test class.
+ * Boots the stub store API once per suite and logs in once per test class.
  * Every test class extends this — no test ever worries about setup.
  */
 public abstract class BaseApiTest {
 
-    private static StubBankApi stub;
+    private static StubStoreApi stub;
     private static boolean started = false;
 
     protected String token;
 
     @BeforeSuite(alwaysRun = true)
-    public void startStubBankApi() throws IOException {
+    public void startStubStoreApi() throws IOException {
         if (!started) {
-            stub = new StubBankApi(FrameworkConfig.mockPort());
+            stub = new StubStoreApi(FrameworkConfig.mockPort());
             stub.start();
             started = true;
         }
     }
 
     @AfterSuite(alwaysRun = true)
-    public void stopStubBankApi() {
+    public void stopStubStoreApi() {
         if (stub != null) {
             stub.stop();
             stub = null;

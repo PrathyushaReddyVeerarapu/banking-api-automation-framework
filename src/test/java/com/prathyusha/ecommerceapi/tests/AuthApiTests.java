@@ -1,10 +1,10 @@
-package com.prathyusha.bankingapi.tests;
+package com.prathyusha.ecommerceapi.tests;
 
-import com.prathyusha.bankingapi.client.ApiClient;
-import com.prathyusha.bankingapi.config.FrameworkConfig;
-import com.prathyusha.bankingapi.model.ApiError;
-import com.prathyusha.bankingapi.model.AuthToken;
-import com.prathyusha.bankingapi.model.LoginRequest;
+import com.prathyusha.ecommerceapi.client.ApiClient;
+import com.prathyusha.ecommerceapi.config.FrameworkConfig;
+import com.prathyusha.ecommerceapi.model.ApiError;
+import com.prathyusha.ecommerceapi.model.AuthToken;
+import com.prathyusha.ecommerceapi.model.LoginRequest;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -18,7 +18,7 @@ import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.isEmptyOrNullString;
 
-@Epic("Banking API")
+@Epic("Store API")
 @Feature("Authentication")
 public class AuthApiTests extends BaseApiTest {
 
@@ -72,7 +72,7 @@ public class AuthApiTests extends BaseApiTest {
     public void protectedEndpointWithoutTokenReturns401() {
         ApiError error = ApiClient.anonymous()
                 .when()
-                .get("/accounts")
+                .get("/products")
                 .then()
                 .statusCode(401)
                 .extract()
@@ -86,7 +86,7 @@ public class AuthApiTests extends BaseApiTest {
     public void protectedEndpointWithBadTokenReturns401() {
         ApiClient.authenticated("forged-token")
                 .when()
-                .get("/accounts")
+                .get("/products")
                 .then()
                 .statusCode(401);
     }

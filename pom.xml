@@ -5,14 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.prathyusha</groupId>
-    <artifactId>banking-api-automation-framework</artifactId>
+    <artifactId>ecommerce-api-automation-framework</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>Banking API Automation Framework</name>
-    <description>Production-style API test automation framework for a demo banking platform.
-        Java 17 · REST Assured · TestNG · Allure · WireMock · GitHub Actions</description>
-    <url>https://github.com/PrathyushaReddyVeerarapu/banking-api-automation-framework</url>
+    <name>E-commerce API Automation Framework</name>
+    <description>Production-style API test automation framework for a demo e-commerce store.
+        Java 17 · REST Assured · TestNG · Allure · GitHub Actions</description>
+    <url>https://github.com/PrathyushaReddyVeerarapu/ecommerce-api-automation-framework</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
