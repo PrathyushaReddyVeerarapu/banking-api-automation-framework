@@ -12,7 +12,7 @@
     <name>Banking API Automation Framework</name>
     <description>Production-style API test automation framework for a demo banking platform.
         Java 17 · REST Assured · TestNG · Allure · WireMock · GitHub Actions</description>
-    <url>https://github.com/prathyusha-reddy/banking-api-automation-framework</url>
+    <url>https://github.com/PrathyushaReddyVeerarapu/banking-api-automation-framework</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

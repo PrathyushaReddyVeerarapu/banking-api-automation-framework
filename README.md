@@ -1,6 +1,6 @@
 # Banking API Automation Framework
 
-[![API Tests](https://github.com/prathyusha-reddy/banking-api-automation-framework/actions/workflows/api-tests.yml/badge.svg)](https://github.com/prathyusha-reddy/banking-api-automation-framework/actions/workflows/api-tests.yml)
+[![API Tests](https://github.com/PrathyushaReddyVeerarapu/banking-api-automation-framework/actions/workflows/api-tests.yml/badge.svg)](https://github.com/PrathyushaReddyVeerarapu/banking-api-automation-framework/actions/workflows/api-tests.yml)
 ![Java 17](https://img.shields.io/badge/Java-17-blue)
 ![REST Assured](https://img.shields.io/badge/REST_Assured-5.4.0-green)
 ![TestNG](https://img.shields.io/badge/TestNG-7.10-red)
@@ -37,7 +37,7 @@ flowchart LR
 Requirements: Java 17+, Maven 3.8+.
 
 ```bash
-git clone https://github.com/prathyusha-reddy/banking-api-automation-framework.git
+git clone https://github.com/PrathyushaReddyVeerarapu/banking-api-automation-framework.git
 cd banking-api-automation-framework
 
 # run the full suite (spins up the stub banking API automatically)
